@@ -1,0 +1,6 @@
+{
+  "name": "mcp-integrations",
+  "description": "Integrates some MCP servers with Claude Code",
+  "version": "1.0.0",
+  "mcpServers": "./.mcp.json"
+}
