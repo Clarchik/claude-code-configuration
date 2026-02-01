@@ -69,8 +69,8 @@ cd claude-code-configuration
 ### Option 2: Install from Source
 
 ```bash
-git clone https://github.com/clarchik/clarchik-claude-marketplace.git
-cd clarchik-claude-marketplace
+git clone https://github.com/clarchik/claude-code-configuration.git
+cd claude-code-configuration
 claude-code plugin install ./
 ```
 
@@ -137,7 +137,7 @@ MIT License - See [LICENSE](./LICENSE) for details.
 
 ## Support
 
-For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/clarchik/clarchik-claude-marketplace).
+For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/clarchik/claude-code-configuration).
 
 ## Learn More
 
