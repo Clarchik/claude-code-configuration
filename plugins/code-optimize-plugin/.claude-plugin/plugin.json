@@ -1,5 +1,17 @@
 {
   "name": "code-optimize",
-  "description": "Optimize code for performance",
-  "version": "1.0.0"
+  "description": "Analyze and optimize code for performance, memory, and efficiency",
+  "version": "1.0.0",
+  "author": {
+    "name": "Vitalii Burakovskyy",
+    "url": "https://github.com/clarchik"
+  },
+  "repository": "https://github.com/clarchik/clarchik-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "performance",
+    "optimization",
+    "memory",
+    "efficiency"
+  ]
 }

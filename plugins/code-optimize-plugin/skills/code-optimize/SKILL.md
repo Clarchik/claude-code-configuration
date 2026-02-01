@@ -51,25 +51,25 @@ $ARGUMENTS
 ### 3. **Optimization Checklist**
 
 **JavaScript/TypeScript**
--  Use const/let instead of var
--  Avoid nested loops where possible
--  Use Map/Set for lookups
--  Minimize DOM manipulations
--  Debounce/throttle expensive operations
+-  Use const/let instead of var
+-  Avoid nested loops where possible
+-  Use Map/Set for lookups
+-  Minimize DOM manipulations
+-  Debounce/throttle expensive operations
 
 **Database**
--  Add indexes on foreign keys
--  Use prepared statements
--  Batch inserts/updates
--  Implement connection pooling
--  Cache expensive queries
+-  Add indexes on foreign keys
+-  Use prepared statements
+-  Batch inserts/updates
+-  Implement connection pooling
+-  Cache expensive queries
 
 **Network**
--  Compress responses (gzip/brotli)
--  Use CDN for static assets
--  Implement HTTP/2
--  Set proper cache headers
--  Minimize payload size
+-  Compress responses (gzip/brotli)
+-  Use CDN for static assets
+-  Implement HTTP/2
+-  Set proper cache headers
+-  Minimize payload size
 
 ### 4. **Measurement Tools**
 

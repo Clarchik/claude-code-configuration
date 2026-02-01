@@ -1,4 +1,5 @@
 ---
+description: Generate detailed code explanations with visual diagrams and step-by-step breakdowns
 model: claude-sonnet-4-5
 ---
 
@@ -264,7 +265,7 @@ def slow_function():
 def slow_function():
     time.sleep(1)
 slow_function = timer(slow_function)
-````
+```
 
 **In this code**: The decorator is used to {specific_use_in_code}
 ''',
@@ -340,7 +341,7 @@ class AlgorithmVisualizer:
 
                     if arr[j] > arr[j+1]:
                         arr[j], arr[j+1] = arr[j+1], arr[j]
-                        step_viz += f"Swap → {arr}\n"
+                        step_viz += f"Swap -> {arr}\n"
                         swapped = True
                     else:
                         step_viz += "No swap needed\n"
@@ -348,7 +349,7 @@ class AlgorithmVisualizer:
                 steps.append(step_viz)
 
                 if not swapped:
-                    steps.append(f"\n✅ Array is sorted: {arr}")
+                    steps.append(f"\nArray is sorted: {arr}")
                     break
 
         return '\n'.join(steps)
@@ -361,28 +362,25 @@ class AlgorithmVisualizer:
 ## Recursion Visualization: {func_name}
 
 ### Call Stack Visualization:
-````
 
-{func*name}({example_input})
-│
-├─> Base case check: {example_input} == 0? No
-├─> Recursive call: {func_name}({example_input - 1})
-│ │
-│ ├─> Base case check: {example_input - 1} == 0? No
-│ ├─> Recursive call: {func_name}({example_input - 2})
-│ │ │
-│ │ ├─> Base case check: 1 == 0? No
-│ │ ├─> Recursive call: {func_name}(0)
-│ │ │ │
-│ │ │ └─> Base case: Return 1
-│ │ │
-│ │ └─> Return: 1 * 1 = 1
-│ │
-│ └─> Return: 2 \_ 1 = 2
-│
-└─> Return: 3 \* 2 = 6
-
-```
+{func_name}({example_input})
+|
+|-> Base case check: {example_input} == 0? No
+|-> Recursive call: {func_name}({example_input - 1})
+| |
+| |-> Base case check: {example_input - 1} == 0? No
+| |-> Recursive call: {func_name}({example_input - 2})
+| | |
+| | |-> Base case check: 1 == 0? No
+| | |-> Recursive call: {func_name}(0)
+| | | |
+| | | --> Base case: Return 1
+| | |
+| | --> Return: 1 * 1 = 1
+| |
+| --> Return: 2 * 1 = 2
+|
+--> Return: 3 * 2 = 6
 
 **Final Result**: {func_name}({example_input}) = 6
 """
@@ -424,7 +422,7 @@ def safe_divide(a, b):
 safe_divide(10, 2)    # Success case
 safe_divide(10, 0)    # Division by zero
 safe_divide(10, "2")  # Type error
-````
+```
 
 ### Example 2: Custom Exceptions
 
@@ -462,8 +460,8 @@ Try implementing a function that:
 3. Handles empty lists
 4. Handles non-numeric values
 5. Uses appropriate exception handling
-   ''',
-   'async_programming': '''
+''',
+'async_programming': '''
 
 ## Try It Yourself: Async Programming
 
@@ -558,7 +556,7 @@ classDiagram
         +getInstance(): Singleton
     }
     Singleton --> Singleton : returns same instance
-````
+```
 
 ### Implementation in this code:
 
@@ -566,23 +564,23 @@ classDiagram
 
 ### Benefits:
 
-✅ Controlled access to single instance
-✅ Reduced namespace pollution
-✅ Permits refinement of operations
+- Controlled access to single instance
+- Reduced namespace pollution
+- Permits refinement of operations
 
 ### Drawbacks:
 
-❌ Can make unit testing difficult
-❌ Violates Single Responsibility Principle
-❌ Can hide dependencies
+- Can make unit testing difficult
+- Violates Single Responsibility Principle
+- Can hide dependencies
 
 ### Alternative Approaches:
 
 1. Dependency Injection
 2. Module-level singleton
 3. Borg pattern
-   ''',
-   'observer': '''
+''',
+'observer': '''
 
 ## Observer Pattern
 
@@ -663,7 +661,7 @@ class EmailSubscriber:
 
         return patterns.get(pattern_name, "Pattern explanation not available")
 
-````
+```
 
 ### 7. Common Pitfalls and Best Practices
 
@@ -684,7 +682,7 @@ def analyze_common_pitfalls(self, code):
             'issue': 'Bare except clause',
             'severity': 'high',
             'explanation': '''
-## ⚠️ Bare Except Clause
+## Bare Except Clause
 
 **Problem**: `except:` catches ALL exceptions, including system exits and keyboard interrupts.
 
@@ -709,7 +707,7 @@ except (ValueError, TypeError) as e:
 except Exception as e:
     logger.error(f"Unexpected error: {e}")
     raise
-````
+```
 
 '''
 },
@@ -719,7 +717,7 @@ except Exception as e:
 'severity': 'medium',
 'explanation': '''
 
-## ⚠️ Global Variable Usage
+## Global Variable Usage
 
 **Problem**: Using global variables makes code harder to test and reason about.
 
@@ -759,7 +757,7 @@ class Counter:
 
     return issues
 
-````
+```
 
 ### 8. Learning Path Recommendations
 
@@ -811,17 +809,17 @@ def generate_learning_path(self, analysis):
     learning_path['structured_plan'] = f"""
 ## Your Personalized Learning Path
 
-### Week 1-2: Fundamentals
+### Fundamentals
 - Review basic concepts: {', '.join(learning_path['recommended_topics'][:2])}
 - Complete exercises on each topic
 - Build a small project using these concepts
 
-### Week 3-4: Applied Learning
+### Applied Learning
 - Study the patterns in this codebase
 - Refactor a simple version yourself
 - Compare your approach with the original
 
-### Week 5-6: Advanced Topics
+### Advanced Topics
 - Explore edge cases and optimizations
 - Learn about alternative approaches
 - Contribute to open source projects using these patterns
@@ -833,7 +831,7 @@ def generate_learning_path(self, analysis):
 """
 
     return learning_path
-````
+```
 
 ## Output Format
 

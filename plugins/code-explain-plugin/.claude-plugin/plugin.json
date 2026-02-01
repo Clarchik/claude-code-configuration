@@ -1,5 +1,17 @@
 {
   "name": "code-explain",
-  "description": "Generate detailed code explanations",
-  "version": "1.0.0"
+  "description": "Generate detailed code explanations with visual diagrams",
+  "version": "1.0.0",
+  "author": {
+    "name": "Vitalii Burakovskyy",
+    "url": "https://github.com/clarchik"
+  },
+  "repository": "https://github.com/clarchik/clarchik-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "explain",
+    "documentation",
+    "learning",
+    "diagrams"
+  ]
 }

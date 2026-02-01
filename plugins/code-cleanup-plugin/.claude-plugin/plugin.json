@@ -1,5 +1,17 @@
 {
   "name": "code-cleanup",
-  "description": "Clean up and refactor code",
-  "version": "1.0.0"
+  "description": "Refactor and clean up code following best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "Vitalii Burakovskyy",
+    "url": "https://github.com/clarchik"
+  },
+  "repository": "https://github.com/clarchik/clarchik-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "cleanup",
+    "refactor",
+    "code-quality",
+    "best-practices"
+  ]
 }

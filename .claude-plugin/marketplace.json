@@ -4,27 +4,31 @@
     "name": "Clarchik",
     "contact": "https://github.com/clarchik"
   },
-  "description": "Clarchik's Claude Code setup for productive development",
+  "metadata": {
+    "description": "Clarchik's Claude Code setup for productive development",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
   "plugins": [
     {
       "name": "code-cleanup",
       "source": "./plugins/code-cleanup-plugin",
-      "description": "Adds a /code-cleanup command for a clean up and refactor code"
+      "description": "Refactor and clean up code following best practices"
     },
     {
       "name": "code-explain",
       "source": "./plugins/code-explain-plugin",
-      "description": "Adds a /code-explain command to generate detailed code explanations"
+      "description": "Generate detailed code explanations with visual diagrams"
     },
     {
       "name": "code-optimize",
       "source": "./plugins/code-optimize-plugin",
-      "description": "Adds a /code-optimize command to optimize code for performance"
+      "description": "Analyze and optimize code for performance and efficiency"
     },
     {
       "name": "mcp-integrations",
       "source": "./plugins/mcp-integrations-plugin",
-      "description": "Integrates some MCP servers with Claude Code"
+      "description": "Pre-configured MCP servers for documentation and browser automation"
     }
   ]
 }

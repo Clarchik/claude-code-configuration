@@ -1,6 +1,18 @@
 {
   "name": "mcp-integrations",
-  "description": "Integrates some MCP servers with Claude Code",
+  "description": "Pre-configured MCP servers for documentation and browser automation",
   "version": "1.0.0",
+  "author": {
+    "name": "Vitalii Burakovskyy",
+    "url": "https://github.com/clarchik"
+  },
+  "repository": "https://github.com/clarchik/clarchik-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "context7",
+    "playwright",
+    "browser-automation"
+  ],
   "mcpServers": "./.mcp.json"
 }
