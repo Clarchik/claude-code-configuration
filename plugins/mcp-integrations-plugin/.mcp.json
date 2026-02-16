@@ -14,6 +14,14 @@
         "@playwright/mcp@latest"
       ],
       "description": "Browser automation and web testing capabilities"
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest",
+        "--autoConnect",
+        "--channel=beta"
+      ]
     }
   }
 }
